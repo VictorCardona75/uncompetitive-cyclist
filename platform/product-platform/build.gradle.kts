@@ -8,5 +8,5 @@ group = "me.victorcardona.platform"
 javaPlatform.allowDependencies()
 
 dependencies {
-    api("org.springframework.boot:spring-boot-dependencies:2.7.2")
+    api(platform("org.springframework.boot:spring-boot-dependencies:2.7.2"))
 }
