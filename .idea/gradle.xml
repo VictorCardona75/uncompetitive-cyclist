@@ -4,13 +4,32 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/platform" name="platform">
+                <projects>
+                  <project path="$PROJECT_DIR$/platform" />
+                  <project path="$PROJECT_DIR$/platform/plugins-platform" />
+                  <project path="$PROJECT_DIR$/platform/product-platform" />
+                  <project path="$PROJECT_DIR$/platform/test-platform" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/inventory-manager" />
-        <option name="gradleJvm" value="corretto-17" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/build-logic" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/inventory-manager" />
-            <option value="$PROJECT_DIR$/inventory-manager/domain" />
+            <option value="$PROJECT_DIR$/build-logic" />
+            <option value="$PROJECT_DIR$/build-logic/commons" />
+            <option value="$PROJECT_DIR$/build-logic/kotlin-library" />
+            <option value="$PROJECT_DIR$/build-logic/spring-boot-application" />
+            <option value="$PROJECT_DIR$/platform" />
+            <option value="$PROJECT_DIR$/platform/plugins-platform" />
+            <option value="$PROJECT_DIR$/platform/product-platform" />
+            <option value="$PROJECT_DIR$/platform/test-platform" />
           </set>
         </option>
       </GradleProjectSettings>
