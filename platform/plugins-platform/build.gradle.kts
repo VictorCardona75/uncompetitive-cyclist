@@ -10,6 +10,7 @@ val springBootVersion = "2.7.2"
 dependencies {
     constraints {
         api("org.jetbrains.kotlin.jvm:org.jetbrains.kotlin.jvm.gradle.plugin:$kotlinVersion")
+        api("org.jetbrains.dokka:org.jetbrains.dokka.gradle.plugin:$kotlinVersion")
         api("org.jetbrains.kotlin.plugin.spring:org.jetbrains.kotlin.plugin.spring.gradle.plugin:$kotlinVersion")
         api("org.springframework.boot:org.springframework.boot.gradle.plugin:$springBootVersion")
     }
