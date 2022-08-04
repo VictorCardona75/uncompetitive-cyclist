@@ -11,4 +11,8 @@ val kotestVersion = "5.4.1"
 
 dependencies {
     api(platform("io.kotest:kotest-bom:$kotestVersion"))
+
+    constraints {
+        api("io.mockk:mockk:1.12.5")
+    }
 }
